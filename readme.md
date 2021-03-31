@@ -1,17 +1,17 @@
 # CRC calculator for [Microchip dsPIC](https://www.microchip.com/en-us/products/microcontrollers-and-microprocessors/16-bit-mcus/dspic33c-dscs-100-mips)
 
-Calculates the CRC checksum for the selected flash area according to Microchip classB library implementation. The script can add the calculated CRC value to the selected address.
+Calculates the CRC checksum for the selected flash area according to Microchip classB library implementation. The script can add the calculated CRC value to the selected address. The script can be used together with MPLAB X as a post process cript to automate the develeopment process.
 
 ClassB library from Microchip:
 https://www.microchip.com/en-us/solutions/consumer/home-appliances/class-b-safety-software
 
-crc configuration: CRCMOD (poly=0x18005, rev=False, initCrc=0xFFFF, xorOut=0x0000).
+default crc configuration: CRCMOD (poly=0x18005, rev=False, initCrc=0xFFFF, xorOut=0x0000).
 
 ## Dependencies:
 
 The script using 2 external python module:
-crcmod - [http://crcmod.sourceforge.net/](http://crcmod.sourceforge.net/)
-intelhex - [https://readthedocs.org/projects/python-intelhex/](https://readthedocs.org/projects/python-intelhex/)
+* crcmod - [http://crcmod.sourceforge.net/](http://crcmod.sourceforge.net/)
+* intelhex - [https://readthedocs.org/projects/python-intelhex/](https://readthedocs.org/projects/python-intelhex/)
 
 
 ## Usage
@@ -31,7 +31,7 @@ intelhex - [https://readthedocs.org/projects/python-intelhex/](https://readthedo
 ## Example
 mchpcrccalc.py input.hex output.hex 0x0 0xADE8 0x2AFFA
 
-## Use with MPLAb X
+## Use with MPLAB X
 
 You can use this script with MPLAB X. 
 1. Download the created executable from the release page. [Releases](releses)
