@@ -34,7 +34,7 @@ mchpcrccalc.py input.hex output.hex 0x0 0xADE8 0x2AFFA
 ## Use with MPLAB X
 
 You can use this script with MPLAB X. 
-1. Download the created executable from the release page. [Releases](releses)
+1. Download executable from the release page. [Releases](https://github.com/MarkWendler/MCHP_CRCcalc_dsPIC/releases)
 2. Copy the executable to your project root.
 3. Set the project properties to run the script at post processing stage: 
 
